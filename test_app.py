@@ -26,5 +26,20 @@ class APITestCase(unittest.TestCase):
         response = self.client.get('/protected')
         self.assertEqual(response.status_code, 401)
 
+
+    def test_login_wrong_method(self):
+        response = self.client.get('/login')
+        self.assertIn(response.status_code, [400, 405])
+
+    def test_protected_with_fake_token(self):
+        response = self.client.get('/protected', headers={
+            "Authorization": "Bearer token_invalido"
+        })
+        self.assertEqual(response.status_code, 401)
+
+    def test_route_not_found(self):
+        response = self.client.get('/rota_que_nao_existe')
+        self.assertEqual(response.status_code, 404)
+
 if __name__ == '__main__':
     unittest.main()
