@@ -26,7 +26,7 @@ class APITestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 401)
 
 
-        def test_healthcheck(self):
+    def test_healthcheck(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
         self.assertIn("message", response.json)
