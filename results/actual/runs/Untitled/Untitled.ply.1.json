@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Untitled",
+    "test": "Untitled",
+    "type": "request",
+    "start": "2025-11-17T23:51:45.307Z",
+    "end": "2025-11-17T23:51:45.330Z",
+    "result": {
+      "status": "Errored",
+      "message": "Request 'Untitled' ERRORED in 23 ms: request to http://127.0.0.1:1313/protected failed, reason: connect ECONNREFUSED 127.0.0.1:1313"
+    },
+    "request": {
+      "name": "Untitled",
+      "type": "request",
+      "url": "http://127.0.0.1:1313/protected",
+      "method": "GET",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "submitted": "2025-11-17T23:51:45.308Z"
+    }
+  }
+]

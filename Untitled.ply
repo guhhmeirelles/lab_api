@@ -1,0 +1,6 @@
+Untitled:
+  url: http://127.0.0.1:1313/protected
+  method: GET
+  headers:
+    Content-Type: application/json
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc2MjI5ODc5NSwianRpIjoiMjM0ODcyN2EtN2E1MS00NjI2LTlkMDQtZDJiMmRiNWZkNjljIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InVzZXIiLCJuYmYiOjE3NjIyOTg3OTUsImV4cCI6MTc2MjI5OTY5NX0.L0NAE9Fnq-mSoHiC4WYkVoLFP6smket1xypbjTEtBGM
